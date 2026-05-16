@@ -1,0 +1,77 @@
+*{
+
+.cyan{
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+}
+
+.blue{
+    background:linear-gradient(135deg,#396afc,#2948ff);
+}
+
+.orange{
+    background:linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+.green{
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section-title{
+    font-size:24px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.report-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.report-card{
+    text-decoration:none;
+    color:white;
+    background:#111927;
+    padding:25px;
+    border-radius:20px;
+    min-height:110px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-weight:600;
+    transition:0.35s;
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+.report-card:hover{
+    transform:translateY(-8px);
+    background:linear-gradient(135deg,#00d2ff,#3a7bd5);
+}
+
+.special-card{
+    background:linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+@media(max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        min-height:auto;
+        position:relative;
+    }
+
+    .main{
+        margin-left:0;
+        width:100%;
+    }
+
+}
